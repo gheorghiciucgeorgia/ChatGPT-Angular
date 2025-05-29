@@ -1,0 +1,20 @@
+<div class="m-0 p-0 bg-[#3A3960]">
+  <div class="header w-full flex items-center justify-center text-[#FAFFC5] border-b border-[#FAFFC5] h-[45px]">
+    <h3 class="text-[17px] font-[500]">ChatGPT Bot Replica</h3>
+  </div>
+
+  <div class="container max-w-[920px] h-[93.5vh] flex flex-col justify-between mx-auto">
+    <div class="chat-container flex-1">
+      <div id="chat-log" class="mb-[10px] text-white rounded-[5px]"></div>
+    </div>
+
+    <div class="input-container bg-[#3A3960] p-[10px] flex justify-between border-t border-[#5c5c66] sticky bottom-0">
+      <input type="text" id="user-input" [(ngModel)]="message" (keydown.enter)="sendMessage()"
+        placeholder="Type your message here..." class="flex-1 bg-white text-black px-2 rounded" />
+      <button (click)="sendMessage()"
+        class="flex items-center justify-center px-[20px] py-[8px] border-none rounded-[5px] bg-[#118B50] text-white ml-[15px]">
+        <i [class]="buttonIconClass"></i>
+      </button>
+    </div>
+  </div>
+</div>

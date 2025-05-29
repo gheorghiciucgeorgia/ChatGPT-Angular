@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Oswald:wght@200..700&display=swap');
+
+* {
+    font-family: "Ancizar Sans", sans-serif;
+}
+
+#user-input {
+    background-color: #25243f;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 8px;
+    flex: 9;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+#user-input::placeholder {
+    color: #cdd1a4;
+    font-weight: 400;
+}
+
+#send-button {
+    transition: all 0.3s ease;
+}
+
+#send-button:hover {
+    background-color: #0f7543;
+}
+
+.bot,
+.user {
+    display: flex;
+    align-items: flex-start;
+    color: #eee;
+    width: 100%;
+    padding: 15px 7px 15px 10px;
+    border-radius: 6px;
+    background-color: #2c2b47;
+    margin-bottom: 15px;
+}
+
+.user {
+    display: flex;
+    justify-content: end;
+    width: 80%;
+    margin-left: 20%;
+}
+
+.bot {
+    width: 80%;
+}
+
+#chat-log #user-icon i {
+    background-color: #A9BFA8;
+    padding: 10px 11px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#chat-log #bot-icon i {
+    background-color: #6590bf;
+    padding: 10px 8px 11px;
+    font-size: 20px;
+}
+
+#user-icon {
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
